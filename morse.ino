@@ -25,6 +25,23 @@ void dash() {
   delay(250);
 }
 
+void read_morse(String morse_code) {
+  
+  for(int i = 0; i < morse_code.length(); i++) {
+    if(morse_code[i] == ' ') {
+      delay(470);
+      continue;
+    }
+    
+    if(morse_code[i] == '.') {
+      dot();
+    } else {
+      dash();
+    }
+    
+  }
+  
+}
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
