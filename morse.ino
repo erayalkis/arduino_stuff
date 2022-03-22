@@ -18,6 +18,13 @@ void dot() {
   delay(100);
 }
 
+void dash() {
+  digitalWrite(MORSE_PIN, HIGH);
+  delay(300);
+  digitalWrite(MORSE_PIN, LOW);
+  delay(250);
+}
+
 
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
