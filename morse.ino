@@ -27,13 +27,7 @@ String morsify(String input) {
       continue;
     }
     
-    int charIdx;
-    
-    for(int j = 0; j < sizeof(alphabet); j++) {
-       if(alphabet[j] == input[i]) {
-        charIdx = j;
-       }
-    }
+    int charIdx = input[i] % 97; // Mod char by 97 to get its index in array (ex => 'a' % 97 is 0 and 'b' % 97 is 2 etc.)
 
     morse_string.concat(morse[charIdx]);
     morse_string.concat(" ");
