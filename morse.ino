@@ -1,13 +1,13 @@
 int const MORSE_PIN = 13;
-String const MESSAGE = "sos";
+String const MESSAGE = "amongus your mother amongus";
 String MORSE;
 
 char alphabet[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-String morse[] = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
+String morse[26] = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
 
 void dot() {
   digitalWrite(MORSE_PIN, HIGH);
-  delay(100);
+  delay(150);
   digitalWrite(MORSE_PIN, LOW);
   delay(100);
 }
